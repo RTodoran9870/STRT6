@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.SetAlarmActivity"
+    tools:showIn="@layout/activity_set_alarm"
+    android:background="@drawable/ic_background">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/HourTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="07:58"
+            android:textSize="60sp"
+            android:lineHeight="70sp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="@+id/SetHourID"
+            app:layout_constraintEnd_toEndOf="@+id/SetHourID"
+            app:layout_constraintStart_toStartOf="@+id/SetHourID"
+            app:layout_constraintTop_toTopOf="@+id/SetHourID" />
+
+        <ImageView
+            android:id="@+id/SetHourID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ellipse" />
+
+        <TextView
+            android:id="@+id/RepeatID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="40dp"
+            android:lineHeight="19sp"
+            android:text="Repeat"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SetHourID" />
+
+        <ImageView
+            android:id="@+id/MondayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/RepeatID"
+            app:layout_constraintTop_toBottomOf="@+id/RepeatID"
+            app:srcCompat="@drawable/ic_smallellipseoff" />
+
+        <ImageView
+            android:id="@+id/TuesdayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/MondayImage"
+            app:layout_constraintStart_toEndOf="@+id/MondayImage"
+            app:srcCompat="@drawable/ic_smallellipseoff" />
+
+        <ImageView
+            android:id="@+id/WednesdayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/TuesdayImage"
+            app:layout_constraintStart_toEndOf="@+id/TuesdayImage"
+            app:srcCompat="@drawable/ic_smallellipseoff" />
+
+        <ImageView
+            android:id="@+id/ThursdayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/WednesdayImage"
+            app:layout_constraintStart_toEndOf="@+id/WednesdayImage"
+            app:srcCompat="@drawable/ic_smallellipseoff" />
+
+        <ImageView
+            android:id="@+id/FridayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ThursdayImage"
+            app:layout_constraintStart_toEndOf="@+id/ThursdayImage"
+            app:srcCompat="@drawable/ic_smallellipseoff" />
+
+        <ImageView
+            android:id="@+id/SaturdayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/FridayImage"
+            app:layout_constraintStart_toEndOf="@+id/FridayImage"
+            app:srcCompat="@drawable/ic_smallellipseoff" />
+
+        <ImageView
+            android:id="@+id/SundayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/SaturdayImage"
+            app:layout_constraintStart_toEndOf="@+id/SaturdayImage"
+            app:srcCompat="@drawable/ic_smallellipseoff" />
+
+        <TextView
+            android:id="@+id/MondayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:lineHeight="19sp"
+            android:text="Mo"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/MondayImage"
+            app:layout_constraintEnd_toEndOf="@+id/MondayImage"
+            app:layout_constraintStart_toStartOf="@+id/MondayImage"
+            app:layout_constraintTop_toTopOf="@+id/MondayImage" />
+
+        <TextView
+            android:id="@+id/TuesdayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:lineHeight="19sp"
+            android:text="Tu"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TuesdayImage"
+            app:layout_constraintEnd_toEndOf="@+id/TuesdayImage"
+            app:layout_constraintStart_toStartOf="@+id/TuesdayImage"
+            app:layout_constraintTop_toTopOf="@+id/TuesdayImage" />
+
+        <TextView
+            android:id="@+id/WednesdayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineHeight="19sp"
+            android:textColor="#ffffff"
+            android:text="We"
+            app:layout_constraintBottom_toBottomOf="@+id/WednesdayImage"
+            app:layout_constraintEnd_toEndOf="@+id/WednesdayImage"
+            app:layout_constraintStart_toStartOf="@+id/WednesdayImage"
+            app:layout_constraintTop_toTopOf="@+id/WednesdayImage" />
+
+        <TextView
+            android:id="@+id/ThursdayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:lineHeight="19sp"
+            android:text="Th"
+            app:layout_constraintBottom_toBottomOf="@+id/ThursdayImage"
+            app:layout_constraintEnd_toEndOf="@+id/ThursdayImage"
+            app:layout_constraintStart_toStartOf="@+id/ThursdayImage"
+            app:layout_constraintTop_toTopOf="@+id/ThursdayImage" />
+
+        <TextView
+            android:id="@+id/FridayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:lineHeight="19sp"
+            android:text="Fr"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/FridayImage"
+            app:layout_constraintEnd_toEndOf="@+id/FridayImage"
+            app:layout_constraintStart_toStartOf="@+id/FridayImage"
+            app:layout_constraintTop_toTopOf="@+id/FridayImage" />
+
+        <TextView
+            android:id="@+id/SaturdayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Sa"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:lineHeight="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/SaturdayImage"
+            app:layout_constraintEnd_toEndOf="@+id/SaturdayImage"
+            app:layout_constraintStart_toStartOf="@+id/SaturdayImage"
+            app:layout_constraintTop_toTopOf="@+id/SaturdayImage" />
+
+        <TextView
+            android:id="@+id/SundayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:lineHeight="19sp"
+            android:text="Su"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/SundayImage"
+            app:layout_constraintEnd_toEndOf="@+id/SundayImage"
+            app:layout_constraintStart_toStartOf="@+id/SundayImage"
+            app:layout_constraintTop_toTopOf="@+id/SundayImage" />
+
+        <TextView
+            android:id="@+id/RingtoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="16sp"
+            android:lineHeight="19sp"
+            android:textColor="#ffffff"
+            android:text="Ringtone"
+            app:layout_constraintStart_toStartOf="@+id/RepeatID"
+            app:layout_constraintTop_toBottomOf="@+id/MondayText" />
+
+        <ImageView
+            android:id="@+id/SaveButtonID"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RingtoneText"
+            app:srcCompat="@drawable/ic_savebutton" />
+
+        <TextView
+            android:id="@+id/CancelTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:lineHeight="19sp"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/SaveButtonID"
+            app:layout_constraintEnd_toStartOf="@+id/SaveButtonID"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
